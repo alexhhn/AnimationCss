@@ -1,0 +1,24 @@
+.explosion {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(explosion.png) no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    animation: start-explosion 2s steps(15);
+}
+.explosion:hover {
+    background-position: -1500px 0;
+    transition: background 2s steps(15);
+}
+@keyframes start-explosion {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1500px 0;
+    }
+}
