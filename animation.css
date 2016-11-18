@@ -6,7 +6,6 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background: url(explosion.png) no-repeat;
-    background-position: 0 0;
     cursor: pointer;
     animation: start-explosion 2s steps(15);
 }
